@@ -1,0 +1,94 @@
+<!-- This file helps you create SVG logos. Open in browser and save the SVGs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate i3eye Assets</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        svg { border: 1px solid #ccc; margin: 20px 0; background: white; }
+        h2 { margin-top: 40px; }
+        button { padding: 10px 20px; background: #1e5a96; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>i3eye Consortium - Asset Generator</h1>
+    <p>Right-click → Save as to download each SVG</p>
+
+    <h2>1. i3eye Logo (Logo Mark)</h2>
+    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Eye outline -->
+        <path d="M 100 50 Q 150 100 100 150 Q 50 100 100 50" fill="none" stroke="#00897B" stroke-width="4"/>
+        <!-- Iris -->
+        <circle cx="100" cy="100" r="20" fill="none" stroke="#1e3a5f" stroke-width="3"/>
+        <!-- Pupil -->
+        <circle cx="100" cy="100" r="12" fill="#1e3a5f"/>
+        <!-- DNA double helix on right -->
+        <path d="M 130 70 Q 140 80 130 90" fill="none" stroke="#1e5a96" stroke-width="3"/>
+        <path d="M 130 90 Q 140 100 130 110" fill="none" stroke="#1e5a96" stroke-width="3"/>
+        <path d="M 130 110 Q 140 120 130 130" fill="none" stroke="#1e5a96" stroke-width="3"/>
+        <circle cx="130" cy="75" r="2.5" fill="#1e5a96"/>
+        <circle cx="130" cy="95" r="2.5" fill="#1e5a96"/>
+        <circle cx="130" cy="115" r="2.5" fill="#1e5a96"/>
+        <!-- Label -->
+        <text x="100" y="175" font-size="24" font-weight="bold" text-anchor="middle" fill="#1e3a5f">i3eye</text>
+    </svg>
+    <p>Save as: <code>i3eye-logo.svg</code></p>
+
+    <h2>2. Hero Image (Eye + DNA)</h2>
+    <svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+        <!-- Large eye -->
+        <g transform="translate(100, 80)">
+            <path d="M 0 -40 Q 60 0 0 40 Q -60 0 0 -40" fill="none" stroke="#00897B" stroke-width="3"/>
+            <circle cx="0" cy="0" r="25" fill="none" stroke="#1e3a5f" stroke-width="3"/>
+            <circle cx="0" cy="0" r="15" fill="#1e3a5f"/>
+            <circle cx="3" cy="-3" r="5" fill="white"/>
+        </g>
+        <!-- DNA helix -->
+        <g transform="translate(180, 50)">
+            <path d="M 0 0 Q 15 10 0 20 Q -15 30 0 40 Q 15 50 0 60 Q -15 70 0 80 Q 15 90 0 100" 
+                  fill="none" stroke="#1e5a96" stroke-width="3"/>
+            <path d="M 0 0 Q -15 10 0 20 Q 15 30 0 40 Q -15 50 0 60 Q 15 70 0 80 Q -15 90 0 100" 
+                  fill="none" stroke="#9C27B0" stroke-width="3"/>
+            <!-- Connection points -->
+            <circle cx="0" cy="20" r="3" fill="#1e5a96"/>
+            <circle cx="0" cy="60" r="3" fill="#1e5a96"/>
+            <circle cx="0" cy="100" r="3" fill="#1e5a96"/>
+        </g>
+        <!-- Text -->
+        <text x="150" y="220" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e3a5f">
+            Genomic Discovery in Inflammatory Eye Disease
+        </text>
+    </svg>
+    <p>Save as: <code>hero-eye-dna.svg</code></p>
+
+    <h2>3. Globe Icon (Diversity)</h2>
+    <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="75" cy="75" r="65" fill="none" stroke="#9C27B0" stroke-width="3"/>
+        <!-- Latitude lines -->
+        <ellipse cx="75" cy="75" rx="60" ry="20" fill="none" stroke="#9C27B0" stroke-width="2" opacity="0.5"/>
+        <ellipse cx="75" cy="75" rx="60" ry="35" fill="none" stroke="#9C27B0" stroke-width="2" opacity="0.5"/>
+        <!-- Longitude lines -->
+        <line x1="75" y1="15" x2="75" y2="135" stroke="#9C27B0" stroke-width="2" opacity="0.5"/>
+        <line x1="30" y1="75" x2="120" y2="75" stroke="#9C27B0" stroke-width="2" opacity="0.5"/>
+        <!-- People dots -->
+        <circle cx="85" cy="45" r="4" fill="#9C27B0"/>
+        <circle cx="60" cy="55" r="4" fill="#9C27B0"/>
+        <circle cx="95" cy="75" r="4" fill="#9C27B0"/>
+        <circle cx="50" cy="85" r="4" fill="#9C27B0"/>
+        <circle cx="75" cy="105" r="4" fill="#9C27B0"/>
+    </svg>
+    <p>Save as: <code>globe-icon.svg</code></p>
+
+    <h2>Instructions</h2>
+    <ol>
+        <li>Right-click on each SVG above</li>
+        <li>Select "Save image as..."</li>
+        <li>Save to: <code>/Users/pavel/Developer/i3eye/assets/</code></li>
+        <li>Use filenames shown above</li>
+    </ol>
+
+    <h2>Alternative: Quick Create Folder Command</h2>
+    <p>Run this in terminal to create the assets folder:</p>
+    <code>mkdir -p /Users/pavel/Developer/i3eye/assets</code>
+</body>
+</html>
