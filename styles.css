@@ -203,9 +203,16 @@ a:hover {
 }
 
 .hero-image img {
-    width: 100%;
+    width: min(100%, 560px);
+    max-height: 420px;
     height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: var(--radius-lg);
+}
+
+.hero-logo-image {
+    object-fit: contain;
 }
 
 /* Resources Section */
@@ -393,6 +400,11 @@ a:hover {
     margin-bottom: 1rem;
     font-size: 1.1rem;
 }
+
+    .hero-image img {
+        width: min(100%, 420px);
+        max-height: 320px;
+    }
 
 .stat p {
     margin: 0;
