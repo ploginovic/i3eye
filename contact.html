@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - i3eye Consortium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/i3eye-logo.svg" alt="i3eye Logo" class="logo-img">
+                <span class="logo-text">i3eye</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Get in Touch</h1>
+        <p>Questions about the i3eye Consortium? We'd love to hear from you.</p>
+    </section>
+
+    <section class="content">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <div class="contact-detail">
+                    <h3>General Inquiries</h3>
+                    <p><strong>Email:</strong> <a href="mailto:info@i3eye.org">info@i3eye.org</a></p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Consortium Lead</h3>
+                    <p><strong>Dr. Tasanee Braithwaite</strong></p>
+                    <p>King's College London</p>
+                    <p><strong>Email:</strong> <a href="mailto:tasanee.braithwaite@kcl.ac.uk">tasanee.braithwaite@kcl.ac.uk</a></p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Office Location</h3>
+                    <p>King's College London<br>Strand<br>London WC2R 2LS<br>UK</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Follow Us</h3>
+                    <p>
+                        <a href="https://twitter.com/i3eyeconsortium" target="_blank" class="social-link">Twitter</a> | 
+                        <a href="https://www.linkedin.com/company/i3eye-consortium" target="_blank" class="social-link">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Contact Form</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution">Institution</label>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="collaboration">Research Collaboration</option>
+                            <option value="publication">Publication Question</option>
+                            <option value="general">General Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-note">We'll get back to you as soon as possible.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>i3eye Consortium</h4>
+                    <p>Led by King's College London</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:info@i3eye.org">info@i3eye.org</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 i3eye Consortium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

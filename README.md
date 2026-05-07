@@ -14,18 +14,18 @@ A professional website for the i3eye Consortium, dedicated to advancing genomic 
 
 ```
 /Users/pavel/Developer/i3eye/
-├── index.html # Home page
-├── about.html # About & vision
-├── research.html # Research & timelines
-├── membership.html # Membership & MoU info
-├── publications.html # Key publications
-├── contact.html # Contact form
-├── styles.css # Responsive styling
-├── script.js # Interactive features
-├── assets/ # Images & logos (create this folder)
-│ ├── i3eye-logo.svg
-│ └── hero-eye-dna.svg
-└── README.md # This file
+├── index.html              # Home page
+├── about.html              # About & vision
+├── research.html           # Research & timelines
+├── membership.html         # Membership & MoU info
+├── publications.html       # Key publications
+├── contact.html            # Contact form
+├── styles.css              # Responsive styling
+├── script.js               # Interactive features
+├── assets/                 # Images & logos (create this folder)
+│   ├── i3eye-logo.svg
+│   └── hero-eye-dna.svg
+└── README.md               # This file
 ```
 
 ## Getting Started Locally
@@ -127,4 +127,3 @@ For questions about the website:
 ---
 
 **Version 1.0** | Created 2024 | i3eye Consortium
-# i3eye
