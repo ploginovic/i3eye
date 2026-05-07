@@ -49,7 +49,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
 }
 
 /* Typography */
@@ -108,7 +108,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 24px;
+    padding: 1rem 32px;
     gap: 1rem 1.5rem;
     flex-wrap: wrap;
 }
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .logo-img {
-    height: 56px;
+    height: 92px;
     width: auto;
 }
 
@@ -188,14 +188,14 @@ a:hover {
     grid-template-columns: 1fr 1.25fr;
     gap: 2.5rem;
     align-items: center;
-    padding: 6rem 24px;
+    padding: 6rem 32px;
     min-height: 72vh;
 }
 
 @media (min-width: 1024px) {
     .hero {
         grid-template-columns: 0.9fr 1.6fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .hero-image {
@@ -203,23 +203,36 @@ a:hover {
     }
 
     .hero-image img {
-        width: min(100%, 920px);
-        max-height: 720px;
+        width: 100%;
+        max-width: 980px;
+        max-height: 760px;
     }
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     color: var(--gray-900);
-    line-height: 1.15;
+    line-height: 1.1;
+    max-width: 72ch;
 }
 
 .hero-content .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: var(--gray-600);
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
+    margin-bottom: 1.75rem;
+    line-height: 1.5;
+}
+
+.hero-content {
+    padding-left: 32px;
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        padding-left: 48px;
+        max-width: 720px;
+    }
 }
 
 .hero-buttons {
@@ -236,8 +249,9 @@ a:hover {
 }
 
 .hero-image img {
-    width: min(100%, 760px);
-    max-height: 640px;
+    width: 100%;
+    max-width: 880px;
+    max-height: 720px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -434,10 +448,7 @@ a:hover {
     font-size: 1.1rem;
 }
 
-    .hero-image img {
-        width: min(100%, 420px);
-        max-height: 320px;
-    }
+    /* small-screen hero image handled by the rules above; override removed for consistency */
 
 .stat p {
     margin: 0;
