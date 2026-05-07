@@ -43,6 +43,7 @@ body {
     color: var(--gray-700);
     background-color: var(--white);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -108,6 +109,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 24px;
+    gap: 1rem 1.5rem;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -128,6 +131,8 @@ a:hover {
     display: flex;
     list-style: none;
     gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .nav-links a {
@@ -173,7 +178,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    padding: 6rem 0;
+    padding: 6rem 24px;
     min-height: 600px;
 }
 
@@ -201,6 +206,54 @@ a:hover {
     width: 100%;
     height: auto;
     border-radius: var(--radius-lg);
+}
+
+/* Resources Section */
+.resources {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, rgba(30, 64, 175, 0.03) 0%, rgba(13, 148, 136, 0.03) 100%);
+}
+
+.resource-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 2rem;
+}
+
+.resource-intro p {
+    color: var(--gray-600);
+    font-size: 1.05rem;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.resource-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.resource-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.resource-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+}
+
+.resource-card p {
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
 }
 
 /* Buttons */
@@ -314,6 +367,12 @@ a:hover {
     margin-bottom: 3rem;
 }
 
+.quick-stats .section-subtitle {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -364,7 +423,7 @@ a:hover {
 .page-header {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: var(--white);
-    padding: 4rem 0;
+    padding: 4rem 24px;
     text-align: center;
 }
 
@@ -855,7 +914,7 @@ footer {
 
     .hero {
         grid-template-columns: 1fr;
-        padding: 3rem 0;
+        padding: 3rem 16px;
         min-height: auto;
         gap: 2rem;
     }
@@ -893,6 +952,10 @@ footer {
     .page-header h1 {
         font-size: 2rem;
     }
+
+    .page-header {
+        padding: 2.5rem 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -916,8 +979,8 @@ footer {
         font-size: 1.75rem;
     }
 
-    .hero-content .subtitle {
-        font-size: 1rem;
+    .nav-links li {
+        padding: 2.5rem 16px;
     }
 
     .logo-text {
