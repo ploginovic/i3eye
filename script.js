@@ -87,3 +87,22 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         link.classList.remove('active');
     }
 });
+
+// Load shared footer fragment into pages
+function loadFooter() {
+    const container = document.getElementById('site-footer');
+    if (!container) return;
+    fetch('footer.html')
+        .then(res => {
+            if (!res.ok) throw new Error('Footer not found');
+            return res.text();
+        })
+        .then(html => {
+            container.outerHTML = html;
+        })
+        .catch(err => {
+            console.error('Failed to load footer:', err);
+        });
+}
+
+document.addEventListener('DOMContentLoaded', loadFooter);

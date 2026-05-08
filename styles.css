@@ -935,13 +935,13 @@ footer {
 }
 
 .footer-partner-logo {
-    height: 42px;
+    height: 80px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    background: rgba(255, 255, 255, 0.96);
-    padding: 0.4rem 0.65rem;
-    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
 }
 
 .footer-section a:hover {
@@ -1046,7 +1046,7 @@ footer {
     }
 
     .footer-partner-logo {
-        height: 38px;
+        height: 68px;
     }
 
     .page-header h1 {
