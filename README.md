@@ -122,7 +122,7 @@ This website is created for the i3eye Consortium. All rights reserved.
 
 For questions about the website:
 - Email: info@i3eye.org
-- Lead Contact: Dr. Tasanee Braithwaite (tasanee.braithwaite@kcl.ac.uk)
+- Co-Leads: Dr. Tasanee Braithwaite (tasanee.braithwaite@kcl.ac.uk) and Dr. Lynn Hassman (lynn.hassman@cuanschutz.edu)
 
 ---
 
